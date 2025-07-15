@@ -6,17 +6,10 @@
   },
   
   "experimental": {
-    "clash_api": {
-      "external_controller": "0.0.0.0:9999",
-      "external_ui": "/etc/sing-box/ui",
-      "secret": "8823070b",
-      "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "🎯 全球直连",
-      "default_mode": "rule"
-    },
+
   "cache_file": {
     "enabled": true,
-    "path": "/etc/sing-box/cache.db",
+    "path": "cache.db",
     "store_fakeip": false
     }
   },
@@ -25,7 +18,7 @@
  {
    "servers": 
    [
-     {"tag": "dns_direct", "address": "218.85.152.99", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
+     {"tag": "dns_direct", "address": "local", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
      {"tag": "dns_proxy", "address": "tls://8.8.8.8", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"}
    ],
    "rules": 
